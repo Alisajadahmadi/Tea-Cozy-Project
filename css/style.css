@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+/*---Applied Styles---*/
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*---Navbar---*/
+.navbar{
+    background-color: #563124;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.navbar img{
+    width: 130px;
+    padding: 0.7%;
+}
+
+.navbar ul{
+    float: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 17px;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul li a{
+    color: white;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 480px)and (min-width: 320px){
+    .navbar{
+        height: 150px;
+    }
+
+    .navbar img{
+        margin-top: 5%;
+    }
+
+}
+
+/*---Main Content---*/
+.main-content{
+    background-image: url(../img/img-mission-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content .title-info{
+    background-color: #563124;
+    width: 100%;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+
+.main-content .title-info h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.main-content .title-info p{
+    font-size: 17px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 480x)and (min-width: 320px){
+    .main-content .title-info{
+        height: 160px;
+    }
+
+    .main-content .title-info h1{
+        font-size: 40px;
+    }
+
+    .main-content .title-info p{
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*---Featured---*/
+.featured{
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.featured h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.featured p{
+    font-size: 17px;
+    padding: 10px;
+}
+
+.feature-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.feature-col h4{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-col p{
+    text-align: left;
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+}
+
+.feature-col img{
+    width: 100%;
+}
+
+/*---Locations---*/
+.locations{
+    background-image: url(../img/img-locations-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
+
+.locations h1{
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.location-col{
+    background-color: #563124;
+    flex-basis: 23%;
+    height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-col h3{
+    margin-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.location-col p{
+    line-height: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .location-col h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px)and (min-width: 320px){
+    .locations{
+        height: 900px;
+    }
+
+    .location-col{
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+
+/*---Footer---*/
+footer{
+    background-color: #563124;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer h1{
+    padding-top: 70px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+footer p{
+    padding-bottom: 30px;
+    color: #e3a894;
+}
+
+footer address{
+    line-height: 30px;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
